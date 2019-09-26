@@ -128,7 +128,6 @@ export default {
     selectUser(user) {
       this.$store.commit("CLEAR_REPOS");
       this.$store.dispatch("selectUser", { user });
-      document.querySelector("#repos-result").scrollIntoView();
     },
     loadMoreRepos() {
       this.$store.dispatch("loadMoreRepos");
